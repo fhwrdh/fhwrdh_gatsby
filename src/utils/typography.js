@@ -1,13 +1,13 @@
 import Typography from 'typography';
-import Wordpress2016 from 'typography-theme-wordpress-2016';
+import Theme from 'typography-theme-wordpress-2012';
 
-Wordpress2016.overrideThemeStyles = () => ({
+Theme.overrideThemeStyles = () => ({
   'a.gatsby-resp-image-link': {
     boxShadow: 'none',
   },
 });
 
-const typography = new Typography(Wordpress2016);
+const typography = new Typography(Theme);
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
