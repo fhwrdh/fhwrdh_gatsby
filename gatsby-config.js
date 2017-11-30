@@ -5,7 +5,7 @@ module.exports = {
     description: 'Unpronouncable since 2001',
     siteUrl: 'http://gatsby.fhwrdh.net',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
