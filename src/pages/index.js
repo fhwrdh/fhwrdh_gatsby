@@ -19,10 +19,24 @@ class BlogIndex extends React.Component {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
+    const nonDrafts =
+      process.env.NODE_ENV === 'production'
+        ? posts.filter(p => !p.node.frontmatter.draft)
+        : posts;
+
+    // const nonDrafts = posts.filter(p => {
+    //   console.log('p.fr: ', p.node.frontmatter.draft);
+    //   console.log(process.env.NODE_ENV === 'production');
+    //   return !p.node.frontmatter.draft;
+    // });
+
+    console.log('posts: ', posts);
+    console.log('nonDrafts: ', nonDrafts);
+
     return (
       <div>
         <Helmet title={siteTitle} />
-        {posts.map(({ node }) => {
+        {nonDrafts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (
             <Row key={node.fields.slug}>
@@ -49,14 +63,6 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex;
 
-
-
-const a = process.env.NODE_ENV === 'production'
-  ? 'P'
-  : 'D';
-
-console.log('process.env: ', a, process.env);
-
 export const pageQuery = graphql`
   query IndexQuery {
     site {
@@ -64,10 +70,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { ne: true } } }
-    ) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
@@ -84,4 +87,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
