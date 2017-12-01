@@ -1,6 +1,7 @@
 ---
 title: Hello World
 date: "2000-05-01T22:12:03.284Z"
+draft: false
 ---
 
 Fhis is my first post on my new fake blog! How exciting!

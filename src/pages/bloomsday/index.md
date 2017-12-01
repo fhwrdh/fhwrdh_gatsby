@@ -1,6 +1,7 @@
 ---
 title: Bloomsday
 date: "2011-06-11T22:12:03.284Z"
+draft: true
 ---
 
 ![Ulysses](./book.jpg)
