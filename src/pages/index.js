@@ -49,7 +49,13 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex;
 
-console.log('process.en: ', process.env);
+
+
+const a = process.env.NODE_ENV === 'production'
+  ? 'P'
+  : 'D';
+
+console.log('process.env: ', a, process.env);
 
 export const pageQuery = graphql`
   query IndexQuery {
