@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "fhwrdh.net",
+  "description": "fhwrdh.net",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Franklin Henderson <fhwrdh@fhwrdh.net>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/fhwrdh/fhwrdh_gatsby"
   },
   "dependencies": {
     "gatsby": "^1.9.118",
@@ -42,7 +42,7 @@
     "typography-theme-irving": "^0.15.10",
     "typography-theme-ocean-beach": "^0.15.11"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/fhwrdh/fhwrdh_gatsby",
   "keywords": [
     "gatsby"
   ],
@@ -50,7 +50,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/fhwrdh/fhwrdh_gatsby.git"
   },
   "scripts": {
     "dev": "npm run develop",
