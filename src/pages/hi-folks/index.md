@@ -2,6 +2,7 @@
 title: New Beginnings
 date: "2000-05-28T22:40:32.169Z"
 draft: false
+tags:
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

@@ -1,7 +1,8 @@
 ---
 title: Bloomsday
 date: "2011-06-11T22:12:03.284Z"
-draft: true
+draft: false
+tags: ireland, joyce, bloomsday, ulysses
 ---
 
 ![Ulysses](./book.jpg)

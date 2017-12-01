@@ -2,6 +2,7 @@
 title: My Second Post!
 date: "2000-05-06T23:46:37.121Z"
 draft: false
+tags:
 ---
 
 Wow! I love blogging so much already.
