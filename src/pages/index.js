@@ -2,9 +2,17 @@ import React from 'react';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
 
 import Bio from '../components/Bio';
 import { rhythm } from '../utils/typography';
+
+const Row = styled.div`
+  display: flex;
+  border-bottom: 1px solid #eee;
+  align-items: flex-end;
+  justify-content: space-between;
+`;
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,11 +22,10 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle} />
-        <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (
-            <div key={node.fields.slug}>
+            <Row key={node.fields.slug}>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
@@ -32,8 +39,7 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            </Row>
           );
         })}
       </div>
@@ -58,7 +64,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM YYYY")
             title
           }
         }
