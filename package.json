@@ -14,8 +14,10 @@
     "gatsby-plugin-offline": "^1.0.10",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sharp": "^1.6.21",
+    "gatsby-plugin-styled-components": "^2.0.3",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-copy-linked-files": "^1.5.21",
+    "gatsby-remark-external-links": "0.0.3",
     "gatsby-remark-images": "^1.5.32",
     "gatsby-remark-prismjs": "^1.2.9",
     "gatsby-remark-responsive-iframe": "^1.4.14",
@@ -35,7 +37,10 @@
     "eslint": "^4.11.0",
     "eslint-plugin-react": "^7.5.1",
     "gh-pages": "^1.1.0",
-    "prettier": "^1.8.2"
+    "prettier": "^1.8.2",
+    "typography-theme-github": "^0.15.10",
+    "typography-theme-irving": "^0.15.10",
+    "typography-theme-ocean-beach": "^0.15.11"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
