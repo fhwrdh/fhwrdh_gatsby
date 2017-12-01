@@ -24,14 +24,9 @@ class BlogIndex extends React.Component {
         ? posts.filter(p => !p.node.frontmatter.draft)
         : posts;
 
-    // const nonDrafts = posts.filter(p => {
-    //   console.log('p.fr: ', p.node.frontmatter.draft);
-    //   console.log(process.env.NODE_ENV === 'production');
-    //   return !p.node.frontmatter.draft;
-    // });
 
-    console.log('posts: ', posts);
-    console.log('nonDrafts: ', nonDrafts);
+    // console.log('posts: ', posts);
+    // console.log('nonDrafts: ', nonDrafts);
 
     return (
       <div>
