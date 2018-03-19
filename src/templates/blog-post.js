@@ -11,10 +11,15 @@ import { Tags } from '../components/Tags';
 const Title = styled.h1`
   margin-top: 0;
   border-bottom: 0;
+  font-family: 'Titillium Web', sans-serif;
 `;
 
 const DraftSpan = styled.span`
   color: red;
+`;
+
+const Date = styled.span`
+  font-family: 'Titillium Web', sans-serif;
 `;
 
 class BlogPostTemplate extends React.Component {
@@ -38,7 +43,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          <Date>{post.frontmatter.date}</Date>
         </p>
         <div
           className="blog-post-content"

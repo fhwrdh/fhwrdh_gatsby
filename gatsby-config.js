@@ -67,8 +67,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-2990497-1`,
       },
+    },
+{
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto`,
+          `Titillium+Web`,
+        ]
+      }
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,

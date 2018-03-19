@@ -12,6 +12,10 @@ const Row = styled.div`
   border-bottom: 1px solid #eee;
   align-items: flex-end;
   justify-content: space-between;
+  font-family: 'Titillium Web', sans-serif;
+`;
+const H3 = styled.h3`
+  font-family: 'Titillium Web', sans-serif;
 `;
 
 class BlogIndex extends React.Component {
@@ -24,7 +28,6 @@ class BlogIndex extends React.Component {
         ? posts.filter(p => !p.node.frontmatter.draft)
         : posts;
 
-
     // console.log('posts: ', posts);
     // console.log('nonDrafts: ', nonDrafts);
 
@@ -35,18 +38,14 @@ class BlogIndex extends React.Component {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (
             <Row key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
+              <H3 style={{ marginBottom: rhythm(1 / 4) }}>
                 <Link
                   style={{ boxShadow: 'none', textDecoration: 'none' }}
                   to={node.fields.slug}
                 >
                   {title}
                 </Link>
-              </h3>
+              </H3>
               <small>{node.frontmatter.date}</small>
             </Row>
           );

@@ -2,15 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Tag = styled.span`
+  font-family: 'Titillium Web', sans-serif;
   display: inline-block;
   padding: 0 6px;
   margin-right: 5px;
-  border-radius: 3px;
+  border-radius: 2px;
   border: 1px solid #e0e0e0;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-variant: all-small-caps;
   background-color: #f9f9f9;
-  cursor: pointer;
+  user-select: none;
   &:hover {
     border: 1px solid #ddd;
     background-color: #f0f0f0;
