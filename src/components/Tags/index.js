@@ -1,4 +1,5 @@
 import React from 'react';
+import R from 'ramda';
 import styled from 'styled-components';
 
 const Tag = styled.span`
@@ -26,7 +27,13 @@ const TagList = styled.div`
 
 const parseTags = tagString => {
   if (!tagString) return null;
-  return tagString.toLowerCase().split(',').sort().map(t => <Tag key={t}>{t}</Tag>);
+  return R.pipe(
+    R.toLower,
+    R.split(','),
+    R.map(R.trim),
+    R.sortBy(t => t),
+    R.map(t => <Tag key={t}>{t}</Tag>)
+  )(tagString)
 }
 
 export const Tags = ({ tags }) => (

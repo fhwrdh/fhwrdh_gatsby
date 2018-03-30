@@ -15,6 +15,7 @@ const Title = styled.h1`
 `;
 
 const DraftSpan = styled.span`
+  font-variant: all-small-caps;
   color: red;
 `;
 
