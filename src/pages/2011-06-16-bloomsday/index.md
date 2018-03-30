@@ -1,7 +1,7 @@
 ---
 path: "/bloomsday"
 title: Bloomsday
-date: "2011-06-11T22:12:03.284Z"
+date: "2011-06-16T22:12:03.284Z"
 draft: false
 tags: ireland, joyce, bloomsday, ulysses
 ---
