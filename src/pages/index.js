@@ -18,6 +18,11 @@ const H3 = styled.h3`
   font-family: 'Titillium Web', sans-serif;
 `;
 
+const Date = styled.small`
+  display: inline-block;
+  white-space: nowrap;
+`;
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
@@ -46,7 +51,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </H3>
-              <small>{node.frontmatter.date}</small>
+              <Date>{node.frontmatter.date}</Date>
             </Row>
           );
         })}
