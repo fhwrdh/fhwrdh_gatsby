@@ -23,6 +23,12 @@ const Date = styled.span`
   font-family: 'Titillium Web', sans-serif;
 `;
 
+const Comment = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  font-size: ${rhythm(1/2)};
+`;
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
@@ -51,6 +57,9 @@ class BlogPostTemplate extends React.Component {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
         <Tags tags={post.frontmatter.tags} />
+        <Comment>
+          Comments? Find me on <a href="http://www.twitter.com/fhwrdh">Twitter</a>
+      </Comment>
         <hr
           style={{
             marginBottom: rhythm(1),
