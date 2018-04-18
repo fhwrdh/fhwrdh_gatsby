@@ -1,11 +1,19 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import GatsbyLink from 'gatsby-link';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import Bio from '../components/Bio';
 import { rhythm } from '../utils/typography';
+
+const Link = styled(GatsbyLink)`
+  box-shadow: none;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+`;
 
 const Row = styled.div`
   display: flex;
@@ -14,8 +22,10 @@ const Row = styled.div`
   justify-content: space-between;
   font-family: 'Titillium Web', sans-serif;
 `;
+
 const H3 = styled.h3`
   font-family: 'Titillium Web', sans-serif;
+  margin-bottom: ${rhythm(1 / 4)};
 `;
 
 const Date = styled.small`
@@ -33,9 +43,6 @@ class BlogIndex extends React.Component {
         ? posts.filter(p => !p.node.frontmatter.draft)
         : posts;
 
-    // console.log('posts: ', posts);
-    // console.log('nonDrafts: ', nonDrafts);
-
     return (
       <div>
         <Helmet title={siteTitle} />
@@ -43,13 +50,8 @@ class BlogIndex extends React.Component {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (
             <Row key={node.fields.slug}>
-              <H3 style={{ marginBottom: rhythm(1 / 4) }}>
-                <Link
-                  style={{ boxShadow: 'none', textDecoration: 'none' }}
-                  to={node.fields.slug}
-                >
-                  {title}
-                </Link>
+              <H3>
+                <Link to={node.fields.slug}>{title}</Link>
               </H3>
               <Date>{node.frontmatter.date}</Date>
             </Row>
