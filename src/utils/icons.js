@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { TwitterBoxIcon, GithubBoxIcon, CameraIcon, LinkedinBoxIcon } from 'mdi-react';
+import { FileDocumentBoxIcon, TwitterBoxIcon, GithubBoxIcon, CameraIcon, LinkedinBoxIcon } from 'mdi-react';
 
 const wrapIcon = icon => styled(icon)`
   margin-right: 5px;
@@ -8,6 +8,7 @@ const wrapIcon = icon => styled(icon)`
 `;
 
 const Camera = wrapIcon(CameraIcon);
+const FileDocumentBox = wrapIcon(FileDocumentBoxIcon);
 const GithubBox = wrapIcon(GithubBoxIcon);
 const LinkedInBox = wrapIcon(LinkedinBoxIcon);
 const TwitterBox = wrapIcon(TwitterBoxIcon);
@@ -15,6 +16,7 @@ const TwitterBox = wrapIcon(TwitterBoxIcon);
 
 export {
   Camera,
+  FileDocumentBox,
   GithubBox,
   LinkedInBox,
   TwitterBox,
