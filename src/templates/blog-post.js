@@ -9,7 +9,7 @@ import { rhythm, scale } from '../utils/typography';
 import { Tags } from '../components/Tags';
 
 const Title = styled.h1`
-  margin-top: 0;
+  margin-top: .5em;
   border-bottom: 0;
   font-family: 'Titillium Web', sans-serif;
 `;

@@ -2,14 +2,27 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import { Container } from 'react-responsive-grid';
-
 import { rhythm, scale } from '../utils/typography';
 
-const Title = styled.h1`
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  align-items: flex-end;
+  color: #585858;
+`;
+
+const Title = styled.div`
   font-family: 'Titillium Web', san-serif;
   font-weight: 400;
-  margin-bottom: ${() => rhythm(1.0)};
+  margin-bottom: 0;
   margin-top: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+`;
+
+const Icons = styled.div`
+  display:flex;
 `;
 
 const QuietLink = styled(Link)`
@@ -25,11 +38,6 @@ class Template extends React.Component {
   render() {
     const { location, children } = this.props;
 
-    let rootPath = `/`;
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`;
-    }
-
     return (
       <Container
         style={{
@@ -38,9 +46,11 @@ class Template extends React.Component {
           fontFamily: 'Roboto, sans-serif',
         }}
       >
-        <Title style={{ ...scale(1.3) }}>
-          <QuietLink to={'/'}>fhwrdh.net</QuietLink>
-        </Title>
+        <Header>
+          <Title style={{ ...scale(1.3) }}>
+            <QuietLink to={'/'}>fhwrdh.net</QuietLink>
+          </Title>
+        </Header>
         {children()}
       </Container>
     );
