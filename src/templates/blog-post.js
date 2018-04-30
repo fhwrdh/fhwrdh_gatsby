@@ -19,7 +19,8 @@ const DraftSpan = styled.span`
   color: red;
 `;
 
-const Date = styled.span`
+const Date = styled.div`
+  margin-top: 1.8em;
   font-family: 'Titillium Web', sans-serif;
 `;
 
