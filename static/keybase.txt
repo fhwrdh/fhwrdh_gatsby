@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/fhwrdh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.fhwrdh.net
+  * I am fhwrdh (https://keybase.io/fhwrdh) on keybase.
+  * I have a public key ASBDEz9Sr-0CciWuQxgfNLEAhekYpG7SzgmyOiPjm5eznwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012043133f52afed027225ae43181f34b10085e918a46ed2ce09b23a23e39b97b39f0a",
+      "host": "keybase.io",
+      "kid": "012043133f52afed027225ae43181f34b10085e918a46ed2ce09b23a23e39b97b39f0a",
+      "uid": "1eef38bc7cf246bf21a14c201caf2619",
+      "username": "fhwrdh"
+    },
+    "merkle_root": {
+      "ctime": 1546392345,
+      "hash": "f8b3cfcb92d41a5a571a4068709e86d981889b68c84b2159899e7ac5a3638dce157f5961d990938896b73ed13861359fa132e73a333eb7d8d850f379de5dbe20",
+      "hash_meta": "062d8efaee7e1342c2595faf80b8e1637262cca2b2367ff62f32e804ee338a88",
+      "seqno": 4217552
+    },
+    "service": {
+      "entropy": "TRIphWISErxQspV7eZIOD6TL",
+      "hostname": "www.fhwrdh.net",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.12.5"
+  },
+  "ctime": 1546392373,
+  "expire_in": 504576000,
+  "prev": "fcf9669172daeebd3234ec1b820d6db5eb596648b7a15b7560a051adc4ff2736",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQxM/Uq/tAnIlrkMYHzSxAIXpGKRu0s4Jsjoj45uXs58Kp3BheWxvYWTESpcCDcQg/PlmkXLa7r0yNOwbgg1ttetZZki3oVt1YKBRrcT/JzbEIHa5lT9d2pxr7dw1vT9JEDpgaZHTxYYROz8ZNnqw5XKiAgHCo3NpZ8RA2knoNi1OULSu2NwLfRC2DiXXxq6Waj6I3aXgIep6qXkG2UyAsjG/ikPOseLO82CNW2EsLhXVStvmGCEisSESBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGKkNfq8suuqFcWSQwobho/712D9DXJeJXUVprf/rl8So3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fhwrdh
+
+==================================================================
