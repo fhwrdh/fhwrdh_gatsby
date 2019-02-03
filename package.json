@@ -62,7 +62,8 @@
     "format": "prettier --trailing-comma es5 --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop -p 8001",
     "copy": "cp -r public/* ~/webapps/fhwrdh_gatsby",
-    "prod": "NODE_ENV=production npm run build && npm run copy",
+    "prod": "NODE_ENV=production npm run build",
+    "publish": "./publish.sh",
     "build": "gatsby build",
     "deploy-off": "gatsby build --prefix-paths && gh-pages -d public",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"always\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
