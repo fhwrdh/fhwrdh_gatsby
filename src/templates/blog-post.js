@@ -9,7 +9,7 @@ import { rhythm, scale } from '../utils/typography';
 import { Tags } from '../components/Tags';
 
 const Title = styled.h1`
-  margin-top: .5em;
+  margin-top: 0.5em;
   border-bottom: 0;
   font-family: 'Titillium Web', sans-serif;
 `;
@@ -27,14 +27,13 @@ const Date = styled.div`
 const Comment = styled.div`
   display: flex;
   justify-content: flex-end;
-  font-size: ${rhythm(1/2)};
+  font-size: ${rhythm(1 / 2)};
 `;
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-    console.log('post.frontmatter: ', post.frontmatter);
 
     return (
       <div>
@@ -43,6 +42,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.title}
           <DraftSpan>{post.frontmatter.draft ? ' DRAFT' : ''}</DraftSpan>
         </Title>
+
         <p
           style={{
             ...scale(-1 / 5),
@@ -59,8 +59,9 @@ class BlogPostTemplate extends React.Component {
         />
         <Tags tags={post.frontmatter.tags} />
         <Comment>
-          Comments? Find me on <a href="http://www.twitter.com/fhwrdh">Twitter</a>
-      </Comment>
+          Comments? Find me on{' '}
+          <a href="http://www.twitter.com/fhwrdh">Twitter</a>
+        </Comment>
         <hr
           style={{
             marginBottom: rhythm(1),
